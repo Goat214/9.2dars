@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import Input from "../components/Input";
 
 function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div >
+      <a className="btn" href="/">
+      Start exploring
+      </a>
+
+      <Input/>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

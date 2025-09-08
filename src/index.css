@@ -1,7 +1,7 @@
 @import "./css/button.css";
 @import "./css/fonts.css";
 @import "./css/variables.css";
-
+@import "./css/input.css";
 
 *,
 *::after,
@@ -11,12 +11,32 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   height: 100%;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 a {
-  display: block;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  font-size: var(--font-size-preset-6);
+  line-height: var(--line-height-loose);
+  background-color: var(--color-neutral-100);
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
